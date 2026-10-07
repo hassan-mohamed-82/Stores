@@ -52,8 +52,8 @@ public class WarehouseService {
             }
 
         }
-        warehouse.setName(warehouse.getName());
-        warehouse.setAddress(warehouse.getAddress());
+        existwarehouse.setName(warehouse.getName());
+        existwarehouse.setAddress(warehouse.getAddress());
         return WarehouseResponse.from(warehouseRepository.save(existwarehouse));
     }
 
